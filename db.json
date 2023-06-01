@@ -1,38 +1,47 @@
 {
 	"superheroes": [
 		{
+			"id": 1,
 			"hero": "Iron Man",
 			"actor": "Rober Downey Junior"
 		},
 		{
-			"hero": "Iron Man",
-			"actor": "Rober Downey Junior"
+			"id": 2,
+			"hero": "Miss Marvel",
+			"actor": "Iman Vellani"
 		},
 		{
+			"id": 3,
 			"hero": "Black Widow",
 			"actor": "Natasha Romanof"
 		},
 		{
+			"id": 4,
 			"hero": "Captain Marvel",
 			"actor": "Carol Danvers"
 		},
 		{
+			"id": 5,
 			"hero": "Doctor Strange",
 			"actor": "Benedict Cumberbatch"
 		},
 		{
+			"id": 6,
 			"hero": "Captain America",
 			"actor": "Chris Evans"
 		},
 		{
+			"id": 7,
 			"hero": "Hulk",
 			"actor": "Mark Rufallo"
 		},
 		{
+			"id": 8,
 			"hero": "Black Panther",
 			"actor": "Chadwick Boseman"
 		},
 		{
+			"id": 9,
 			"hero": "Thor",
 			"actor": "Chris Hemsworth"
 		}
