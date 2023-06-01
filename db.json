@@ -1,0 +1,40 @@
+{
+	"superheroes": [
+		{
+			"hero": "Iron Man",
+			"actor": "Rober Downey Junior"
+		},
+		{
+			"hero": "Iron Man",
+			"actor": "Rober Downey Junior"
+		},
+		{
+			"hero": "Black Widow",
+			"actor": "Natasha Romanof"
+		},
+		{
+			"hero": "Captain Marvel",
+			"actor": "Carol Danvers"
+		},
+		{
+			"hero": "Doctor Strange",
+			"actor": "Benedict Cumberbatch"
+		},
+		{
+			"hero": "Captain America",
+			"actor": "Chris Evans"
+		},
+		{
+			"hero": "Hulk",
+			"actor": "Mark Rufallo"
+		},
+		{
+			"hero": "Black Panther",
+			"actor": "Chadwick Boseman"
+		},
+		{
+			"hero": "Thor",
+			"actor": "Chris Hemsworth"
+		}
+	]
+}
