@@ -1,5 +1,6 @@
 import { UseQueryResult, useQuery } from 'react-query'
 import { User } from '../../types/users'
+import { Link } from 'react-router-dom'
 
 const fetchUsers = async (): Promise<User[]> => {
 	const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -19,7 +20,9 @@ export const Person = () => {
 			<h1>Using React Query</h1>
 			{data?.map((users: User) => (
 				<ul key={users?.id}>
-					<li>{users?.id}</li>
+					<Link to={`/react-query/${users.id}`}>
+						<li>{users?.id}</li>
+					</Link>
 					<li>{users?.name}</li>
 					<li>{users?.phone}</li>
 				</ul>

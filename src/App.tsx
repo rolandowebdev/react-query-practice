@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import { Route, Routes } from 'react-router-dom'
-import { Home, Person, Superheroes } from './pages'
+import { DetailPerson, Home, Person, Superheroes } from './pages'
 
 const queryClient = new QueryClient({
 	defaultOptions: {
@@ -19,6 +19,7 @@ export const App = () => {
 				<Route path='/' element={<Home />} />
 				<Route path='/axios' element={<Superheroes />} />
 				<Route path='/react-query' element={<Person />} />
+				<Route path='/react-query/:id' element={<DetailPerson />} />
 			</Routes>
 		</QueryClientProvider>
 	)
