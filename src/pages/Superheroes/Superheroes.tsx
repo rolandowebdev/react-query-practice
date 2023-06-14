@@ -48,11 +48,12 @@ export const Superheroes = () => {
 
 	return (
 		<div>
+			<h1>Using Axios</h1>
 			{datas?.map((data) => (
-				<div key={data.id}>
-					<h1>{data.hero}</h1>
+				<ul key={data.id}>
+					<p>{data.hero}</p>
 					<p>{data.actor}</p>
-				</div>
+				</ul>
 			))}
 		</div>
 	)
