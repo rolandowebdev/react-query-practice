@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { Route, Routes } from 'react-router-dom'
 import { Home, Superheroes } from './pages'
-import { QueryClientProvider, QueryClient } from 'react-query'
 
 const queryClient = new QueryClient()
 
@@ -9,7 +9,7 @@ export const App = () => {
 		<QueryClientProvider client={queryClient}>
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/superheroes' element={<Superheroes />} />
+				<Route path='/fetch' element={<Superheroes />} />
 			</Routes>
 		</QueryClientProvider>
 	)
