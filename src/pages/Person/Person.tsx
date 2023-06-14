@@ -1,3 +1,29 @@
+import { UseQueryResult, useQuery } from 'react-query'
+import { User } from '../../types/users'
+
+const fetchUsers = async (): Promise<User[]> => {
+	const res = await fetch('https://jsonplaceholder.typicode.com/users')
+	if (res.ok) return res.json()
+	throw new Error('Network response not ok!')
+}
+
 export const Person = () => {
-	return <div>Person</div>
+	const { isLoading, isError, error, data }: UseQueryResult<User[], Error> =
+		useQuery<User[], Error, User[], string>('person', fetchUsers)
+
+	if (isLoading) return <p>Loading...</p>
+	if (isError) return <p>{error?.message}</p>
+
+	return (
+		<>
+			<h1>Using React Query</h1>
+			{data?.map((users: User) => (
+				<ul key={users?.id}>
+					<li>{users?.id}</li>
+					<li>{users?.name}</li>
+					<li>{users?.phone}</li>
+				</ul>
+			))}
+		</>
+	)
 }
